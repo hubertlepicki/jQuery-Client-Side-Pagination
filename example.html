@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <title>AmberBit :: jQuery Client Side Pagination Plugin</title>
+    <link href="http://ajax.googleapis.com//ajax/libs/jqueryui/1.7.2/themes/start/jquery-ui.css" type="text/css" rel="Stylesheet" />
+
+    <script type="text/javascript" src="http://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("jquery", "1.4.2");
+    </script>
+    <script type="text/javascript" src="jquery.client_side_pagination.js"></script>
+</head>
+<body>
+  <div id="first_pagination">
+    <h3>Default behavior</h3>
+    <div class="i">This is</div>
+    <div class="i">a default</div>
+    <div class="i">behavior</div>
+    <div class="i">of this</div>
+    <div class="i">small plugin,</div>
+    <div class="i">which is</div>
+    <div class="i">5 records</div>
+    <div class="i">per page.</div>
+  </div>
+ 
+  <div per-page="1" id="second_pagination">
+    <h3>Table example, 1 row per page</h3>
+    <table border="1">
+      <tr class="i"><td>Agent Smith</td><td>He is pretty annoying one.</td></tr>
+      <tr class="i"><td>Neo</td><td>Can fly and knows kung-fu!</td></tr>
+      <tr class="i"><td>The Oracle</td><td>Not sure if she's good or bad.</td></tr>
+    </table>
+  </div>
+ 
+
+  <script type="text/javascript">
+    $(function() {
+      $("#first_pagination").clientSidePagination();
+      $("#second_pagination").clientSidePagination();
+    });
+  </script>
+</body>
+ </html>
+
